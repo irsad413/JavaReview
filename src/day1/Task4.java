@@ -26,7 +26,7 @@ public class Task4 {
         double price = Double.parseDouble(str.substring(str.lastIndexOf('$') + 1)) ;
 
         double checking = price - ( price * (percentage / 100.00));
-         DecimalFormat decimalFormat = new DecimalFormat("##.00") ;
+         DecimalFormat decimalFormat = new DecimalFormat("##,00") ;
         checking = Double.parseDouble(decimalFormat.format(checking)) ;
 
         System.out.println(checking);
